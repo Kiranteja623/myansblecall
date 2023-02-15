@@ -1,0 +1,8 @@
+---
+pool:
+  vmImage: ubuntu-20.04
+  name: "Default"
+trigger:
+  - main
+steps:
+  - script: ansible-playbook -i host jdk.yaml
